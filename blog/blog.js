@@ -40,17 +40,12 @@ const articles = [
 	
 ]
 
-// Function to display articles
 function displayArticles() {
     const container = document.getElementById('articles-container');
     
-    // Loop through each article and create HTML
     articles.forEach(article => {
-        // Create a new article element
         const articleElement = document.createElement('article');
         articleElement.classList.add('article');
-        
-        // Create a template literal for the article's HTML
         const articleHTML = `
             <div class="stats">
                 <p class="date">${article.date}</p>
@@ -64,15 +59,10 @@ function displayArticles() {
                 <p class="description">${article.description}</p>
             </div>
         `;
-        
-        // Set the innerHTML of the new article to the template literal
         articleElement.innerHTML = articleHTML;
-        
-        // Append the article to the container
         container.prepend(articleElement);
     });
 }
 
-// Call the function to display articles
 displayArticles();
 
