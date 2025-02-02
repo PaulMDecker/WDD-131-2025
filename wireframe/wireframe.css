@@ -1,0 +1,46 @@
+header{
+    text-align: center;
+}
+nav{
+    border-color: black;
+    border-style: solid;
+    text-align: right;
+    padding: 1rem;
+    margin: 1rem;
+}
+a{
+    padding: 1rem;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.stats{
+    padding-right: 1rem;
+    text-align: right;
+    border-right: 1px;
+    border-color: black;
+    border-right-style: solid;
+    margin-right: 2rem;
+}
+.bookName{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.bookSearch{
+    padding: 1rem;
+    border-color: black;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px; 
+    row-gap: 10px;
+    max-width: 250px; 
+}
+label{
+    margin: 0;
+    max-height: 2rem;
+}
+select{
+    max-height: 2rem;
+}
