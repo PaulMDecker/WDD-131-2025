@@ -1,0 +1,57 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+    <main>
+      <section class="errors"></section>
+      <form id="checkoutForm" action="completed.html" method="get">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>        
+           
+            <label for="Email">Email:</label>        
+            <input type="text" id="Email" name="Email" required>       
+           
+            <label for="Address">Address:</label>       
+            <textarea id="Address" name="Address" required></textarea>
+    
+        <label for="paymentMethod">Payment method:</label>    
+        <select type="text" id="paymentMethod" name="paymentMethod" required>
+            <option value="">Select Payment Method</option>
+            <option value="creditCard">Credit Card</option>
+            <option value="paypal">PayPal</option>
+        </select>    
+        
+        <p id="creditCardNumberContainer" class="hide">
+            <label for="creditCardNumber" id="creditCardNumber">Credit card number:</label>
+            <input 
+            type="text" 
+            id="creditCardNumber" 
+            name="creditCardNumber" 
+            pattern="[0-9]{16}" 
+            placeholder="Enter 16 digits"
+            required>
+        </p>
+    
+        <p id="paypalUsernameContainer" class="hide">
+            <label for="PayPalUsername">PayPal Username:</label>
+            <input 
+            type="text" 
+            id="PayPalUsername" 
+            name="PayPalUsername" 
+            placeholder="Enter payPal username"
+            required>
+        </p>
+        
+        <button>Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
