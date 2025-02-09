@@ -1,0 +1,101 @@
+.card_container{
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+    display: grid;
+    gap: 15px;
+    width: 410px;
+}
+
+.card_back{
+    width: 390px;
+    height: 210px;
+    background-color: #dddddd;
+    
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    border-radius: 10px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.scanBar{
+    background-color: black;
+    grid-column: 1 / 3;
+    height: 50px;
+} 
+
+.cvc_container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-left: 10px;
+}
+
+#cvc{
+    width: 55px;
+}
+.card_front{
+    width: 350px;
+    height: 210px;
+    background-color: #dddddd;
+    
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+}
+
+.total{
+    
+}
+
+img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: block;
+    margin-left: auto;
+}
+
+.number{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.expiration{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+}
+.expiration-inputs{
+    display: flex;
+    
+}
+
+.expiration-inputs input{
+    width: 40px;
+    margin-left: 5px;
+}
+
+button{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    border-radius: 10px;
+
+}
