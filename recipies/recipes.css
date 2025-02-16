@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #197db6;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: "Amatic SC";
+    }
+   
+
+body{
+    max-width: 363px;
+    padding-right: 20px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.logo h1{
+    
+    margin-bottom: 0%;
+    font-size: 60px;
+}
+ h1, h3{
+    font-family: 'Amatic SC', cursive;
+ }
+
+img{
+    max-width: 100%;
+}
+header{
+    border-right: 2px grey solid;
+    border-bottom: 2px grey solid;
+    width: 100%;
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+}
+header img{
+    max-width: 100px;
+    padding-bottom: 10px;
+}
+
+header input{
+    margin-bottom: 20px;
+    width: 87%;
+}
+
+header button{
+    padding: 0px;
+    max-height: 20px;
+}
+
+body{
+    margin: 0 ;
+    width: 100%;
+    border-right: 2px grey solid;
+}
+
+body h3{
+    color: var(--primary-color);
+}
+
+.recipe{
+    margin: 20px;
+    margin-right: 0px;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center
+}
+footer a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--primary-font);
+}
+
+.social img{
+    max-width: 50px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 600px){
+    body{
+        max-width:  90%;
+        padding-right: 20px;
+        
+    }
+    .recipe{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipe img{
+        max-width: 400px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    body{
+        max-width:  960px;
+        padding-right: 20px;
+        
+    }
+
+}
