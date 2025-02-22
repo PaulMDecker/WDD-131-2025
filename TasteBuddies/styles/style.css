@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #8B5E3B;
+    --secondary-color: #F8EDEB;
+    --accent1-color: #C0392B;
+    --accent2-color: white;
+}  
+
+body{
+    background-color: var(--secondary-color);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+header button{
+    padding: 0px;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+
+.nav-search-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px; /* Adjust width as needed */
+    padding: 10px;
+    border-top: 3px solid black; 
+
+}
+
+ul{
+    list-style-type: disc !important; 
+    padding-left: 20px; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    background-color: var(--accent1-color);
+}
+
+#search_input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+ img{
+ width: 250px;   
+ height: 250px;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe_images{
+    list-style: none !important; 
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.recipe_images li {
+    list-style: none !important;
+}
+
+
+#recipeDropdown {
+    width: 200px; 
+}
+
+#recipeDisplay {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    margin: 20px auto 20px 0;
+    min-height: 300px;
+}
+
+#recipeList li a {
+    display: inline-block; 
+    padding: 10px; 
+}
+
+#recipeList li a:hover{
+    background-color: var(--accent1-color);
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid black;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+}
+
+.footer-logo {
+    height: 50px; /* Adjust size as needed */
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social img {
+    height: 30px;
+}
+
+.credits {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+
+.social img{
+    max-width: 50px;
+}
